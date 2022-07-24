@@ -40,7 +40,6 @@ public class MessageSender
 
             // Semantic convention - OpenTelemetry messaging specification:
             // https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/messaging.md#span-name
-            // https://github.com/open-telemetry/opentelemetry-specification/blob/main/specification/trace/semantic_conventions/messaging.md#span-name
             var activityName = $"{queueName} send";
 
             using var activity = OpenTelemetryExtensions.CreateActivitySource()
